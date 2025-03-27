@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Tugas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body { background-color: #000; color: #fff; font-family: 'Poppins', sans-serif; }
+        .section { padding: 80px 0; border-bottom: 3px solid; border-image: linear-gradient(to right, purple, white); border-image-slice: 1; }
+        .navbar { margin-bottom: 40px; }
+        .profile-card {
+            display: flex;
+            align-items: center;
+            background: #111;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        }
+        .profile-card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+        .profile-details h2 {
+            font-weight: bold;
+        }
+        .profile-info i {
+            margin-right: 10px;
+            color: purple;
+        }
+        .task-list { margin-top: 40px; }
+        .task-item {
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .task-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .task-item a { text-decoration: none; color: purple; font-weight: bold; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tugas">Tugas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="container section">
+        <div class="profile-card">
+            <img src="/mnt/data/image.png" alt="Devwan Hidayawan">
+            <div class="profile-details">
+                <h2>Devwan Hidayawan</h2>
+                <h5>Mahasiswa Pendidikan Teknologi Informasi</h5>
+                <p>Seorang mahasiswa yang memiliki ketertarikan dalam dunia teknologi dan informasi.</p>
+                <div class="profile-info">
+                    <p><i class="fa-solid fa-id-badge"></i> NPM: 2413025009</p>
+                    <p><i class="fa-solid fa-envelope"></i> devwan@email.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tugas" class="container section">
+        <h2 class="text-center mb-4">Daftar Tugas</h2>
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="task-item">
+                    <img src="https://source.unsplash.com/400x250/?technology" alt="Tugas 1">
+                    <h4>Tugas 1</h4>
+                    <a href="#">Lihat Detail</a>
+                </div>
+                <div class="task-item" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/400x250/?computer" alt="Tugas 2">
+                    <h4>Tugas 2</h4>
+                    <a href="#">Lihat Detail</a>
+                </div>
+                <div class="task-item" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/400x250/?coding" alt="Tugas 3">
+                    <h4>Tugas 3</h4>
+                    <a href="#">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="task-item">
+                    <img src="https://source.unsplash.com/400x250/?software" alt="Tugas 4">
+                    <h4>Tugas 4</h4>
+                    <a href="#">Lihat Detail</a>
+                </div>
+                <div class="task-item" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/400x250/?developer" alt="Tugas 5">
+                    <h4>Tugas 5</h4>
+                    <a href="#">Lihat Detail</a>
+                </div>
+                <div class="task-item" data-aos="fade-up">
+                    <img src="https://source.unsplash.com/400x250/?internet" alt="Tugas 6">
+                    <h4>Tugas 6</h4>
+                    <a href="#">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
