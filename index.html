@@ -47,6 +47,23 @@
             margin-bottom: 10px;
         }
         .task-item a { text-decoration: none; color: purple; font-weight: bold; }
+        .locked {
+        position: relative;
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    .locked::after {
+        content: "🔒 Terkunci";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -89,38 +106,38 @@
             <div class="col-md-6" data-aos="fade-up">
                 <div class="task-item">
                     <img src="./Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 1">
-                    <h4>Tugas 1</h4>
-                    <a href="#">Lihat Detail</a>
+                    <h4>Tugas 1 | Tokoh Grafika Komputer</h4>
+                    <a href="https://drive.google.com/drive/folders/1dNCY-4AoFIWglRGwJVMRRf8GosDKm8MR?usp=drive_link">Lihat Detail</a>
                 </div>
                 <div class="task-item" data-aos="fade-up">
                     <img src="./Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 2">
-                    <h4>Tugas 2</h4>
-                    <a href="#">Lihat Detail</a>
+                    <h4>Tugas 2 | Garis DDA dan Bresenham</h4>
+                    <a href="https://drive.google.com/drive/folders/1qVrKwPh8KphzrRisWT9IrAyWMFWIx6BM?usp=drive_link">Lihat Detail</a>
                 </div>
                 <div class="task-item" data-aos="fade-up">
                     <img src="./Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 3">
-                    <h4>Tugas 3</h4>
-                    <a href="#">Lihat Detail</a>
+                    <h4>Tugas 3 | Lingkaran Bresenham & Midpoint</h4>
+                    <a href="https://drive.google.com/drive/folders/14bbCtUVG-vXAJ36jPFnc2pp-HLN57MW0?usp=drive_link">Lihat Detail</a>
                 </div>
             </div>
             <div class="col-md-6" data-aos="fade-up">
-                <div class="task-item">
-                    <img src="./Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 4">
-                    <h4>Tugas 4</h4>
-                    <a href="#">Lihat Detail</a>
-                </div>
-                <div class="task-item" data-aos="fade-up">
-                    <img src="./Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 5">
-                    <h4>Tugas 5</h4>
-                    <a href="#">Lihat Detail</a>
-                </div>
-                <div class="task-item" data-aos="fade-up">
-                    <img src="./Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 6">
-                    <h4>Tugas 6</h4>
-                    <a href="#">Lihat Detail</a>
-                </div>
+            <div class="task-item locked">
+                <img src="./Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 4">
+                <h4>Tugas 4</h4>
+                <a href="#">Lihat Detail</a>
+            </div>
+            <div class="task-item locked">
+                <img src="./Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 5">
+                <h4>Tugas 5</h4>
+                <a href="#">Lihat Detail</a>
+            </div>
+            <div class="task-item locked">
+                <img src=".//Foto/Screenshot 2025-03-27 125637.png" alt="Tugas 6">
+                <h4>Tugas 6</h4>
+                <a href="#">Lihat Detail</a>
             </div>
         </div>
+    </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
